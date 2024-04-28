@@ -15,13 +15,13 @@ typedef struct {
     char roll[MAX_VALUE_LENGTH];
     char branch[MAX_VALUE_LENGTH];
     char year[MAX_VALUE_LENGTH];
-    int marks[NUM_SUBJECTS]; // Maths, Physics, BEE, PPS
+    int marks[NUM_SUBJECTS]; 
     int totalMarks;
 } Student;
 
 Student students[MAX_STUDENTS];
 int numStudents = 0;
-int isAdmin = 0; // 0 for regular user, 1 for admin
+int isAdmin = 0; 
 
 void saveData() {
     FILE *file = fopen("student_data.txt", "w");
