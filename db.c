@@ -187,7 +187,6 @@ void toggleAdminAccess() {
     printf("Enter admin password to toggle access: ");
     scanf("%s", password);
 
-    // Simple password check 
     if (strcmp(password, "adminpass") == 0) {
         isAdmin = !isAdmin;
         printf("Admin access %s.\n", isAdmin ? "granted" : "revoked");
